@@ -305,3 +305,124 @@ body{
     font-size:50px;
     color:#b78ac9;
 }
+/* ==========================
+   GALERÍA
+========================== */
+
+.galeria{
+    padding:80px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.galeria h2{
+    font-family:'Cinzel',serif;
+    font-size:34px;
+    color:#7d5ba6;
+    margin-bottom:40px;
+}
+
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.galeria-grid img{
+    width:100%;
+    border-radius:18px;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.galeria-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   CONFIRMACIÓN
+========================== */
+
+.confirmacion{
+    padding:80px 20px;
+    background:#f8f2fb;
+    text-align:center;
+}
+
+.confirmacion h2{
+    font-family:'Cinzel',serif;
+    color:#7d5ba6;
+    margin-bottom:20px;
+}
+
+.confirmacion p{
+    max-width:650px;
+    margin:0 auto 30px;
+    line-height:1.8;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.whatsapp:hover{
+    background:#1ea952;
+}
+
+/* ==========================
+   DESPEDIDA
+========================== */
+
+.despedida{
+    padding:100px 20px;
+    background:linear-gradient(180deg,#ffffff,#f7f1fa);
+    text-align:center;
+}
+
+.despedida h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#b78ac9;
+}
+
+.despedida p{
+    margin:25px auto;
+    max-width:700px;
+    line-height:1.8;
+}
+
+.despedida h3{
+    font-family:'Cinzel',serif;
+    color:#7d5ba6;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .mensaje h1{
+        font-size:48px;
+    }
+
+    .mensaje h2{
+        font-size:38px;
+    }
+
+    .despedida h2{
+        font-size:46px;
+    }
+
+    .tiempo{
+        width:90px;
+        padding:20px;
+    }
+
+    .tiempo span{
+        font-size:30px;
+    }
+
+}
