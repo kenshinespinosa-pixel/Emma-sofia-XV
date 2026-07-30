@@ -143,3 +143,165 @@ body{
 }
 
 }
+/* ==========================
+   MENSAJE
+========================== */
+
+.mensaje{
+    padding:80px 25px;
+    text-align:center;
+    background:#fff;
+}
+
+.mensaje .detalle{
+    color:#b78ac9;
+    font-family:'Cinzel',serif;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.mensaje h2{
+    font-family:'Great Vibes',cursive;
+    font-size:52px;
+    color:#b78ac9;
+    margin:20px 0;
+}
+
+.mensaje h3{
+    font-family:'Cinzel',serif;
+    margin-top:20px;
+    color:#555;
+}
+
+.mensaje h1{
+    font-family:'Great Vibes',cursive;
+    font-size:64px;
+    color:#c8a2c8;
+    margin:30px 0;
+}
+
+.mensaje p{
+    max-width:800px;
+    margin:18px auto;
+    line-height:1.8;
+}
+
+/* ==========================
+   CONTADOR
+========================== */
+
+.contador{
+    background:#f7f1fa;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contador h2{
+    font-family:'Cinzel',serif;
+    margin-bottom:40px;
+    color:#7d5ba6;
+}
+
+#countdown{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.tiempo{
+    width:120px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.tiempo span{
+    display:block;
+    font-size:42px;
+    font-weight:bold;
+    color:#b78ac9;
+}
+
+.tiempo small{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#777;
+}
+
+/* ==========================
+   EVENTOS
+========================== */
+
+.evento{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.evento h2{
+    font-family:'Cinzel',serif;
+    margin-bottom:35px;
+}
+
+.card{
+    max-width:420px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+.card i{
+    font-size:42px;
+    color:#c8a2c8;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:12px;
+}
+
+.card p{
+    margin:8px 0;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    background:#b78ac9;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.boton:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   DRESS CODE
+========================== */
+
+.dress{
+    padding:80px 20px;
+    background:#f7f1fa;
+    text-align:center;
+}
+
+.dress h2{
+    font-family:'Cinzel',serif;
+}
+
+.dress p{
+    margin:20px 0;
+    font-size:24px;
+}
+
+.dress i{
+    font-size:50px;
+    color:#b78ac9;
+}
