@@ -77,17 +77,11 @@ PORTADA
     width:100%;
     height:100%;
     object-fit:cover;
-    filter:brightness(.65);
+    
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:
-    linear-gradient(
-        rgba(0,0,0,.08),
-        rgba(0,0,0,.40)
-    );
+    display:none;
 }
 
 .hero-content{
