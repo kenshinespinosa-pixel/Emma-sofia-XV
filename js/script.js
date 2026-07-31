@@ -21,22 +21,21 @@ window.addEventListener("load", () => {
 // ===================================
 // BOTÓN ABRIR INVITACIÓN
 // ===================================
-
 const boton = document.getElementById("abrirInvitacion");
 
 if (boton) {
 
     boton.addEventListener("click", () => {
 
-        document.querySelector(".mensaje").scrollIntoView({
-
+        window.scrollTo({
+            top: document.querySelector(".mensaje").offsetTop,
             behavior: "smooth"
-
         });
 
     });
 
 }
+
 
 // ===================================
 // CUENTA REGRESIVA
