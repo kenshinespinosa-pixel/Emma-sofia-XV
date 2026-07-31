@@ -123,3 +123,137 @@ PORTADA
     color:#F4D77A;
 
     margin:20px
+/*==================================================
+MENSAJE
+==================================================*/
+
+.mensaje{
+
+    background:#111;
+
+    padding:90px 25px;
+
+    text-align:center;
+
+}
+
+.mensaje h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:56px;
+
+    color:#D4AF37;
+
+    margin-bottom:30px;
+
+}
+
+.mensaje h3{
+
+    font-family:'Cinzel',serif;
+
+    color:#F4D77A;
+
+    margin:18px 0;
+
+}
+
+.mensaje h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+    color:#D4AF37;
+
+    margin:35px 0;
+
+    text-shadow:0 0 15px rgba(212,175,55,.4);
+
+}
+
+.mensaje p{
+
+    max-width:850px;
+
+    margin:18px auto;
+
+    line-height:2;
+
+    color:#EEE;
+
+}
+
+/*==================================================
+CONTADOR
+==================================================*/
+
+.contador{
+
+    background:#090909;
+
+    padding:90px 20px;
+
+}
+
+.contador h2{
+
+    font-family:'Cinzel',serif;
+
+    color:#D4AF37;
+
+    margin-bottom:45px;
+
+}
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:22px;
+
+}
+
+.tiempo{
+
+    width:120px;
+
+    background:#161616;
+
+    border:1px solid #D4AF37;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,.20);
+
+}
+
+.tiempo span{
+
+    display:block;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#F4D77A;
+
+}
+
+.tiempo small{
+
+    color:white;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
