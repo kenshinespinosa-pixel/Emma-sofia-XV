@@ -14,9 +14,9 @@ html{
 
 body{
     font-family:'Montserrat',sans-serif;
-    background:#faf7fb;
-    color:#444;
-    overflow-x:hidden;
+    background:#0b0b0b;
+    color:#f8f4e8;
+    text-align:center;
 }
 
 /* ==========================
@@ -26,7 +26,7 @@ body{
 #loader{
     position:fixed;
     inset:0;
-    background:#ffffff;
+    background:#111111;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -41,7 +41,7 @@ body{
 .loader-content h2{
     font-family:'Great Vibes',cursive;
     font-size:56px;
-    color:#b78ac9;
+    color:#F4D77A;
 }
 
 .loader-content p{
@@ -62,6 +62,7 @@ body{
     align-items:center;
     text-align:center;
     overflow:hidden;
+    background:#000;
 }
 
 .hero-img{
@@ -74,13 +75,17 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+    background:linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.70)
+    );
+    z-index:1;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-    color:#fff;
+    color:#111111;
     padding:20px;
 }
 
@@ -151,11 +156,11 @@ body{
 .mensaje{
     padding:80px 25px;
     text-align:center;
-    background:#fff;
+    background:#111111;
 }
 
 .mensaje .detalle{
-    color:#b78ac9;
+    color:#F4D77A;
     font-family:'Cinzel',serif;
     letter-spacing:3px;
     text-transform:uppercase;
@@ -164,7 +169,7 @@ body{
 .mensaje h2{
     font-family:'Great Vibes',cursive;
     font-size:52px;
-    color:#b78ac9;
+    color:#F4D77A;
     margin:20px 0;
 }
 
@@ -200,7 +205,7 @@ body{
 .contador h2{
     font-family:'Cinzel',serif;
     margin-bottom:40px;
-    color:#7d5ba6;
+    color:#D4AF37
 }
 
 #countdown{
@@ -222,7 +227,7 @@ body{
     display:block;
     font-size:42px;
     font-weight:bold;
-    color:#b78ac9;
+    color:#F4D77A;
 }
 
 .tiempo small{
@@ -271,7 +276,7 @@ body{
 .boton{
     display:inline-block;
     margin-top:20px;
-    background:#b78ac9;
+    background:#F4D77A;
     color:white;
     text-decoration:none;
     padding:14px 28px;
@@ -304,7 +309,7 @@ body{
 
 .dress i{
     font-size:50px;
-    color:#b78ac9;
+    color:#F4D77A;
 }
 /* ==========================
    GALERÍA
@@ -312,14 +317,14 @@ body{
 
 .galeria{
     padding:80px 20px;
-    background:#ffffff;
+    background:#111111;
     text-align:center;
 }
 
 .galeria h2{
     font-family:'Cinzel',serif;
     font-size:34px;
-    color:#7d5ba6;
+    color:#D4AF37;
     margin-bottom:40px;
 }
 
@@ -385,7 +390,7 @@ body{
 .despedida h2{
     font-family:'Great Vibes',cursive;
     font-size:60px;
-    color:#b78ac9;
+    color:#F4D77A;
 }
 
 .despedida p{
