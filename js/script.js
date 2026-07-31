@@ -1,5 +1,3 @@
-alert("JavaScript cargó correctamente");
-console.log("Script funcionando");
 // ===================================
 // PANTALLA DE CARGA
 // ===================================
