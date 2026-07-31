@@ -1,6 +1,5 @@
 /*==================================================
-  EMMA SOFÍA XV
-  LUXURY BLACK & GOLD
+EMMA SOFÍA XV - LUXURY BLACK & GOLD
 ==================================================*/
 
 *{
@@ -15,9 +14,10 @@ html{
 
 body{
     font-family:'Montserrat',sans-serif;
-    background:#090909;
-    color:#F8F5EE;
+    background:#080808;
+    color:#f5f5f5;
     overflow-x:hidden;
+    line-height:1.7;
 }
 
 /*=========================
@@ -40,23 +40,20 @@ LOADER
 }
 
 .loader-content h2{
-
     font-family:'Great Vibes',cursive;
-    font-size:70px;
+    font-size:72px;
     color:#D4AF37;
     text-shadow:
-    0 0 10px rgba(212,175,55,.7),
-    0 0 25px rgba(212,175,55,.5);
-
+        0 0 10px rgba(212,175,55,.8),
+        0 0 30px rgba(212,175,55,.4);
 }
 
 .loader-content p{
-
-    margin-top:15px;
-    color:white;
+    margin-top:12px;
+    color:#fff;
     letter-spacing:6px;
     text-transform:uppercase;
-
+    font-size:14px;
 }
 
 /*=========================
@@ -64,196 +61,116 @@ PORTADA
 =========================*/
 
 .hero{
-
     position:relative;
     height:100vh;
-    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow:hidden;
     text-align:center;
     background:#000;
-
 }
 
 .hero-img{
-
     position:absolute;
     inset:0;
     width:100%;
     height:100%;
     object-fit:cover;
-    filter:brightness(.45);
-
+    filter:brightness(.35);
 }
 
 .overlay{
-
     position:absolute;
     inset:0;
-
     background:
-    radial-gradient(circle at center,
-    rgba(212,175,55,.12),
-    rgba(0,0,0,.80));
-
+    linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.75)
+    );
 }
 
 .hero-content{
-
     position:relative;
-    z-index:5;
+    z-index:2;
     padding:20px;
-
 }
 
 .hero-content h3{
-
-    color:#D4AF37;
     font-family:'Cinzel',serif;
+    color:#D4AF37;
     letter-spacing:8px;
     font-size:18px;
-
+    text-transform:uppercase;
 }
 
 .hero-content h1{
-
     font-family:'Great Vibes',cursive;
     font-size:92px;
-    color:#F4D77A;
-
-    margin:20px
-/*==================================================
-MENSAJE
-==================================================*/
-
-.mensaje{
-
-    background:#111;
-
-    padding:90px 25px;
-
-    text-align:center;
-
-}
-
-.mensaje h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:56px;
-
-    color:#D4AF37;
-
-    margin-bottom:30px;
-
-}
-
-.mensaje h3{
-
-    font-family:'Cinzel',serif;
-
-    color:#F4D77A;
-
+    color:#F5D87A;
     margin:18px 0;
-
+    text-shadow:
+        0 0 12px rgba(212,175,55,.8),
+        0 0 35px rgba(212,175,55,.5);
 }
 
-.mensaje h1{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:70px;
-
-    color:#D4AF37;
-
-    margin:35px 0;
-
-    text-shadow:0 0 15px rgba(212,175,55,.4);
-
-}
-
-.mensaje p{
-
-    max-width:850px;
-
-    margin:18px auto;
-
-    line-height:2;
-
-    color:#EEE;
-
-}
-
-/*==================================================
-CONTADOR
-==================================================*/
-
-.contador{
-
-    background:#090909;
-
-    padding:90px 20px;
-
-}
-
-.contador h2{
-
+.hero-content h2{
     font-family:'Cinzel',serif;
-
-    color:#D4AF37;
-
-    margin-bottom:45px;
-
+    color:#fff;
+    letter-spacing:4px;
+    font-size:28px;
 }
 
-#countdown{
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:22px;
-
+.fecha{
+    color:#F5D87A;
+    margin:28px 0;
+    font-size:22px;
 }
 
-.tiempo{
-
-    width:120px;
-
-    background:#161616;
-
-    border:1px solid #D4AF37;
-
-    border-radius:18px;
-
-    padding:25px;
-
-    box-shadow:
-    0 0 20px rgba(212,175,55,.20);
-
+#abrirInvitacion{
+    padding:16px 40px;
+    border-radius:50px;
+    border:2px solid #D4AF37;
+    background:linear-gradient(135deg,#8d6a10,#D4AF37,#f5d87a);
+    color:#111;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 0 20px rgba(212,175,55,.35);
 }
 
-.tiempo span{
-
-    display:block;
-
-    font-size:42px;
-
-    font-weight:bold;
-
-    color:#F4D77A;
-
+#abrirInvitacion:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 35px rgba(212,175,55,.8);
 }
 
-.tiempo small{
+/*=========================
+RESPONSIVE
+=========================*/
 
-    color:white;
+@media(max-width:768px){
 
-    letter-spacing:2px;
+.hero-content h1{
+    font-size:64px;
+}
 
-    text-transform:uppercase;
+.hero-content h2{
+    font-size:22px;
+}
+
+.hero-content h3{
+    font-size:15px;
+    letter-spacing:4px;
+}
+
+.fecha{
+    font-size:18px;
+}
+
+#abrirInvitacion{
+    font-size:16px;
+    padding:14px 34px;
+}
 
 }
