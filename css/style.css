@@ -54,76 +54,66 @@ body{
    PORTADA
 ========================== */
 
-.hero{
-    position:relative;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    overflow:hidden;
-    background:#000;
-}
-
-.hero-img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        rgba(0,0,0,.30),
-        rgba(0,0,0,.70)
-    );
-    z-index:1;
-}
-
 .hero-content{
     position:relative;
     z-index:2;
-    color:#111111;
+    color:#F8F5EE;
     padding:20px;
+    text-shadow:0 3px 15px rgba(0,0,0,.9);
 }
 
 .hero-content h3{
     font-family:'Cinzel',serif;
-    letter-spacing:5px;
+    letter-spacing:8px;
     font-size:18px;
+    color:#D4AF37;
+    text-transform:uppercase;
 }
 
 .hero-content h1{
     font-family:'Great Vibes',cursive;
-    font-size:72px;
-    margin:15px 0;
+    font-size:90px;
+    margin:20px 0;
+    color:#F4D77A;
+    text-shadow:
+        0 0 10px rgba(212,175,55,.6),
+        0 0 30px rgba(212,175,55,.4);
 }
 
 .hero-content h2{
     font-family:'Cinzel',serif;
-    font-size:28px;
+    font-size:30px;
+    color:white;
+    letter-spacing:3px;
 }
 
 .fecha{
-    margin:25px 0;
-    font-size:20px;
+    margin:30px 0;
+    font-size:22px;
+    color:#F4D77A;
 }
 
 #abrirInvitacion{
-    background:#c8a2c8;
-    color:white;
+
+    background:linear-gradient(145deg,#C9A227,#F4D77A,#B8860B);
+    color:#111;
     border:none;
-    padding:16px 36px;
-    border-radius:40px;
+    border-radius:50px;
+    padding:18px 42px;
     font-size:18px;
+    font-weight:bold;
     cursor:pointer;
-    transition:.3s;
+    box-shadow:0 0 25px rgba(212,175,55,.5);
+    transition:.35s;
+
 }
 
 #abrirInvitacion:hover{
-    transform:scale(1.05);
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:0 0 40px rgba(212,175,55,.8);
+
 }
 
 /* ==========================
