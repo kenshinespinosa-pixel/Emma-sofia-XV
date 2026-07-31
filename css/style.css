@@ -1,6 +1,7 @@
-/* ==========================
-   ESTILOS GENERALES
-========================== */
+/*==================================================
+  EMMA SOFÍA XV
+  LUXURY BLACK & GOLD
+==================================================*/
 
 *{
     margin:0;
@@ -14,24 +15,24 @@ html{
 
 body{
     font-family:'Montserrat',sans-serif;
-    background:#0b0b0b;
-    color:#f8f4e8;
-    text-align:center;
+    background:#090909;
+    color:#F8F5EE;
+    overflow-x:hidden;
 }
 
-/* ==========================
-   LOADER
-========================== */
+/*=========================
+LOADER
+=========================*/
 
 #loader{
     position:fixed;
     inset:0;
-    background:#111111;
+    background:#000;
     display:flex;
     justify-content:center;
     align-items:center;
     z-index:9999;
-   transition: opacity .8s;
+    transition:opacity .8s;
 }
 
 .loader-content{
@@ -39,386 +40,86 @@ body{
 }
 
 .loader-content h2{
+
     font-family:'Great Vibes',cursive;
-    font-size:56px;
-    color:#F4D77A;
+    font-size:70px;
+    color:#D4AF37;
+    text-shadow:
+    0 0 10px rgba(212,175,55,.7),
+    0 0 25px rgba(212,175,55,.5);
+
 }
 
 .loader-content p{
-    margin-top:10px;
-    letter-spacing:4px;
+
+    margin-top:15px;
+    color:white;
+    letter-spacing:6px;
     text-transform:uppercase;
+
 }
 
-/* ==========================
-   PORTADA
-========================== */
+/*=========================
+PORTADA
+=========================*/
+
+.hero{
+
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:#000;
+
+}
+
+.hero-img{
+
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(.45);
+
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(212,175,55,.12),
+    rgba(0,0,0,.80));
+
+}
 
 .hero-content{
+
     position:relative;
-    z-index:2;
-    color:#F8F5EE;
+    z-index:5;
     padding:20px;
-    text-shadow:0 3px 15px rgba(0,0,0,.9);
+
 }
 
 .hero-content h3{
+
+    color:#D4AF37;
     font-family:'Cinzel',serif;
     letter-spacing:8px;
     font-size:18px;
-    color:#D4AF37;
-    text-transform:uppercase;
+
 }
 
 .hero-content h1{
+
     font-family:'Great Vibes',cursive;
-    font-size:90px;
-    margin:20px 0;
+    font-size:92px;
     color:#F4D77A;
-    text-shadow:
-        0 0 10px rgba(212,175,55,.6),
-        0 0 30px rgba(212,175,55,.4);
-}
 
-.hero-content h2{
-    font-family:'Cinzel',serif;
-    font-size:30px;
-    color:white;
-    letter-spacing:3px;
-}
-
-.fecha{
-    margin:30px 0;
-    font-size:22px;
-    color:#F4D77A;
-}
-
-#abrirInvitacion{
-
-    background:linear-gradient(145deg,#C9A227,#F4D77A,#B8860B);
-    color:#111;
-    border:none;
-    border-radius:50px;
-    padding:18px 42px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    box-shadow:0 0 25px rgba(212,175,55,.5);
-    transition:.35s;
-
-}
-
-#abrirInvitacion:hover{
-
-    transform:translateY(-4px) scale(1.05);
-
-    box-shadow:0 0 40px rgba(212,175,55,.8);
-
-}
-
-/* ==========================
-   CELULAR
-========================== */
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:56px;
-}
-
-.hero-content h2{
-    font-size:22px;
-}
-
-.hero-content h3{
-    font-size:16px;
-}
-
-.fecha{
-    font-size:18px;
-}
-
-}
-/* ==========================
-   MENSAJE
-========================== */
-
-.mensaje{
-    padding:80px 25px;
-    text-align:center;
-    background:#111111;
-}
-
-.mensaje .detalle{
-    color:#F4D77A;
-    font-family:'Cinzel',serif;
-    letter-spacing:3px;
-    text-transform:uppercase;
-}
-
-.mensaje h2{
-    font-family:'Great Vibes',cursive;
-    font-size:52px;
-    color:#F4D77A;
-    margin:20px 0;
-}
-
-.mensaje h3{
-    font-family:'Cinzel',serif;
-    margin-top:20px;
-    color:#555;
-}
-
-.mensaje h1{
-    font-family:'Great Vibes',cursive;
-    font-size:64px;
-    color:#c8a2c8;
-    margin:30px 0;
-}
-
-.mensaje p{
-    max-width:800px;
-    margin:18px auto;
-    line-height:1.8;
-}
-
-/* ==========================
-   CONTADOR
-========================== */
-
-.contador{
-    background:#f7f1fa;
-    padding:80px 20px;
-    text-align:center;
-}
-
-.contador h2{
-    font-family:'Cinzel',serif;
-    margin-bottom:40px;
-    color:#D4AF37
-}
-
-#countdown{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.tiempo{
-    width:120px;
-    background:white;
-    border-radius:18px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.tiempo span{
-    display:block;
-    font-size:42px;
-    font-weight:bold;
-    color:#F4D77A;
-}
-
-.tiempo small{
-    text-transform:uppercase;
-    letter-spacing:2px;
-    color:#777;
-}
-
-/* ==========================
-   EVENTOS
-========================== */
-
-.evento{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.evento h2{
-    font-family:'Cinzel',serif;
-    margin-bottom:35px;
-}
-
-.card{
-    max-width:420px;
-    margin:auto;
-    background:white;
-    border-radius:20px;
-    padding:35px;
-    box-shadow:0 10px 30px rgba(0,0,0,.10);
-}
-
-.card i{
-    font-size:42px;
-    color:#c8a2c8;
-    margin-bottom:20px;
-}
-
-.card h3{
-    margin-bottom:12px;
-}
-
-.card p{
-    margin:8px 0;
-}
-
-.boton{
-    display:inline-block;
-    margin-top:20px;
-    background:#F4D77A;
-    color:white;
-    text-decoration:none;
-    padding:14px 28px;
-    border-radius:40px;
-    transition:.3s;
-}
-
-.boton:hover{
-    transform:translateY(-3px);
-}
-
-/* ==========================
-   DRESS CODE
-========================== */
-
-.dress{
-    padding:80px 20px;
-    background:#f7f1fa;
-    text-align:center;
-}
-
-.dress h2{
-    font-family:'Cinzel',serif;
-}
-
-.dress p{
-    margin:20px 0;
-    font-size:24px;
-}
-
-.dress i{
-    font-size:50px;
-    color:#F4D77A;
-}
-/* ==========================
-   GALERÍA
-========================== */
-
-.galeria{
-    padding:80px 20px;
-    background:#111111;
-    text-align:center;
-}
-
-.galeria h2{
-    font-family:'Cinzel',serif;
-    font-size:34px;
-    color:#D4AF37;
-    margin-bottom:40px;
-}
-
-.galeria-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.galeria-grid img{
-    width:100%;
-    border-radius:18px;
-    transition:.4s;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-}
-
-.galeria-grid img:hover{
-    transform:scale(1.05);
-}
-
-/* ==========================
-   CONFIRMACIÓN
-========================== */
-
-.confirmacion{
-    padding:80px 20px;
-    background:#f8f2fb;
-    text-align:center;
-}
-
-.confirmacion h2{
-    font-family:'Cinzel',serif;
-    color:#7d5ba6;
-    margin-bottom:20px;
-}
-
-.confirmacion p{
-    max-width:650px;
-    margin:0 auto 30px;
-    line-height:1.8;
-}
-
-.whatsapp{
-    background:#25D366;
-}
-
-.whatsapp:hover{
-    background:#1ea952;
-}
-
-/* ==========================
-   DESPEDIDA
-========================== */
-
-.despedida{
-    padding:100px 20px;
-    background:linear-gradient(180deg,#ffffff,#f7f1fa);
-    text-align:center;
-}
-
-.despedida h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#F4D77A;
-}
-
-.despedida p{
-    margin:25px auto;
-    max-width:700px;
-    line-height:1.8;
-}
-
-.despedida h3{
-    font-family:'Cinzel',serif;
-    color:#7d5ba6;
-}
-
-/* ==========================
-   RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-    .mensaje h1{
-        font-size:48px;
-    }
-
-    .mensaje h2{
-        font-size:38px;
-    }
-
-    .despedida h2{
-        font-size:46px;
-    }
-
-    .tiempo{
-        width:90px;
-        padding:20px;
-    }
-
-    .tiempo span{
-        font-size:30px;
-    }
-
-}
+    margin:20px
