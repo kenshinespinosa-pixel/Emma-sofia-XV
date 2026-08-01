@@ -94,12 +94,40 @@ section{
     padding:80px 25px;
 }
 .corona{
+    display:flex;
+    justify-content:center;
+    margin:12px 0 18px;
+}
+
+.corona span{
+    position:relative;
+    width:70px;
+    height:28px;
+}
+
+.corona span::before{
+    content:"♛";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
     color:#d4af37;
-    font-size:22px;
-    letter-spacing:10px;
-    margin-bottom:12px;
+    font-size:32px;
     text-shadow:
-    0 0 10px rgba(212,175,55,.8),
-    0 0 20px rgba(212,175,55,.6);
-    animation:brillo 2s ease-in-out infinite;
+        0 0 10px #d4af37,
+        0 0 20px #f7d774,
+        0 0 35px #f7d774;
+    animation:brilloCorona 2.5s infinite;
+}
+
+@keyframes brilloCorona{
+
+    0%,100%{
+        opacity:1;
+        transform:translateX(-50%) scale(1);
+    }
+
+    50%{
+        opacity:.75;
+        transform:translateX(-50%) scale(1.08);
+    }
 }
