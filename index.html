@@ -2,87 +2,158 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>XV Años | Emma Sofía Greene Chávez</title>
 
-    <meta name="description" content="Invitación digital de los XV años de Emma Sofía Greene Chávez">
+    <meta name="description"
+        content="Invitación digital de los XV años de Emma Sofía Greene Chávez">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
 
-    <!-- Pantalla de carga -->
-    <div id="loader">
-        <div class="loader-content">
-            <h3>Mis XV Años</h3>
-
-<div class="corona">
-    <span></span>
-</div>
-
-<h1>Emma Sofía</h1>
-        </div>
-    </div>
-
-    <!-- Portada -->
-    <header class="hero">
-
-        <img src="assets/img/portada.jpg" alt="Emma Sofía" class="hero-img">
-
-        <div class="overlay"></div>
-
-        <div class="hero-content">
-
-            <h3>Mis XV Años</h3>
-
-            <h1>Emma Sofía</h1>
-
-            <h2>Greene Chávez</h2>
-
-            <p class="fecha">
-                26 de Septiembre de 2026
-            </p>
-
-            <button id="abrirInvitacion">
-                Abrir Invitación
-            </button>
-
-        </div>
-
-    </header>
 <!-- ==========================
-MENSAJE
+PANTALLA DE CARGA
 ========================== -->
 
-<section class="mensaje">
+<div id="loader">
 
-    <span class="detalle">Con la bendición de Dios</span>
+    <div class="loader-content">
 
-    <h2>Hay momentos que marcan nuestra vida para siempre...</h2>
+        <h3>Mis XV Años</h3>
 
-    <p>
-        Compartirlos con quienes más queremos convierte cada instante en un recuerdo inolvidable.
-    </p>
+        <h1>Emma Sofía</h1>
 
-    <p>
-        Tenemos el honor de invitarte a celebrar los XV años de nuestra querida hija.
-    </p>
+        <p>26 • Septiembre • 2026</p>
 
-    <h3>Israel Greene Marrufo</h3>
+    </div>
 
-    <span>&</span>
+</div>
 
-    <h3>Berenice de la Cruz Chávez Budip</h3>
+<!-- ==========================
+PORTADA
+========================== -->
 
-    <h1>Emma Sofía Greene Chávez</h1>
+<header class="hero">
+
+    <img
+        src="assets/img/portada.jpg"
+        alt="Emma Sofía"
+        class="hero-img">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="subtitulo">
+
+            Mis XV Años
+
+        </span>
+
+        <h1>
+
+            Emma Sofía
+
+        </h1>
+
+        <h2>
+
+            Greene Chávez
+
+        </h2>
+
+        <p class="fecha">
+
+            Sábado 26 de Septiembre de 2026
+
+        </p>
+
+        <button id="abrirInvitacion">
+
+            Abrir Invitación
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ==========================
+BIENVENIDA
+========================== -->
+
+<section class="bienvenida">
+
+    <div class="contenedor">
+
+        <span class="detalle">
+
+            Con la bendición de Dios
+
+        </span>
+
+        <h2>
+
+            Hay momentos que marcan nuestra vida para siempre.
+
+        </h2>
+
+        <p>
+
+            Compartirlos con quienes más queremos convierte cada instante en un recuerdo inolvidable.
+
+        </p>
+
+        <p>
+
+            Tenemos el honor de invitarte a celebrar los XV años de nuestra querida hija.
+
+        </p>
+
+        <h3>
+
+            Israel Greene Marrufo
+
+        </h3>
+
+        <span class="ampersand">
+
+            &
+
+        </span>
+
+        <h3>
+
+            Berenice de la Cruz Chávez Budip
+
+        </h3>
+
+        <h1>
+
+            Emma Sofía Greene Chávez
+
+        </h1>
+
+    </div>
 
 </section>
 
@@ -92,28 +163,44 @@ CUENTA REGRESIVA
 
 <section class="contador">
 
-    <h2>Faltan</h2>
+    <h2>
+
+        Faltan...
+
+    </h2>
 
     <div id="countdown">
 
         <div class="tiempo">
+
             <span id="dias">00</span>
+
             <small>Días</small>
+
         </div>
 
         <div class="tiempo">
+
             <span id="horas">00</span>
+
             <small>Horas</small>
+
         </div>
 
         <div class="tiempo">
+
             <span id="minutos">00</span>
+
             <small>Minutos</small>
+
         </div>
 
         <div class="tiempo">
+
             <span id="segundos">00</span>
+
             <small>Segundos</small>
+
         </div>
 
     </div>
@@ -125,27 +212,22 @@ CEREMONIA
 
 <section class="evento">
 
-    <h2>Ceremonia Religiosa</h2>
+    <div class="contenedor">
 
-    <div class="card">
+        <i class="fa-solid fa-church icono-evento"></i>
 
-        <i class="fa-solid fa-church"></i>
+        <h2>Ceremonia Religiosa</h2>
 
-        <h3>Parroquia</h3>
+        <h3>Parroquia San Antonio de Nursia</h3>
 
-        <p id="iglesiaNombre">
-            San Antonio de Nursia
-        </p>
+        <p>6:00 PM</p>
 
-        <p id="iglesiaHora">
-            6:00 PM
-        </p>
-
-        <a id="btnIglesia"
-           href="https://maps.app.goo.gl/y8BEJvFcJnv9mUvK8?g_st=ac"
+        <a href="https://maps.app.goo.gl/y8BEJvFcJnv9mUvK8?g_st=ac"
            target="_blank"
            class="boton">
+
             Ver ubicación
+
         </a>
 
     </div>
@@ -156,29 +238,24 @@ CEREMONIA
 RECEPCIÓN
 ========================== -->
 
-<section class="evento">
+<section class="evento oscuro">
 
-    <h2>Recepción</h2>
+    <div class="contenedor">
 
-    <div class="card">
+        <i class="fa-solid fa-champagne-glasses icono-evento"></i>
 
-        <i class="fa-solid fa-champagne-glasses"></i>
+        <h2>Recepción</h2>
 
-        <h3>Salón de Eventos</h3>
+        <h3>Toh Salón de Eventos</h3>
 
-        <p id="salonNombre">
-            Toh Salon de Eventos
-        </p>
+        <p>8:00 PM</p>
 
-        <p id="salonHora">
-            8:00 PM
-        </p>
-
-        <a id="btnSalon"
-           href="https://maps.app.goo.gl/PvZVewojvqRyY6qz6"
+        <a href="https://maps.app.goo.gl/PvZVewojvqRyY6qz6"
            target="_blank"
            class="boton">
+
             Ver ubicación
+
         </a>
 
     </div>
@@ -186,57 +263,81 @@ RECEPCIÓN
 </section>
 
 <!-- ==========================
-DRESS CODE
+CÓDIGO DE VESTIMENTA
 ========================== -->
 
 <section class="dress">
 
-    <h2>Código de Vestimenta</h2>
+    <div class="contenedor">
 
-    <p>Formal</p>
+        <i class="fa-solid fa-user-tie icono-evento"></i>
 
-    <i class="fa-solid fa-user-tie"></i>
+        <h2>Código de Vestimenta</h2>
 
-</section>
-<!-- ==========================
-GALERÍA
-========================== -->
+        <h3>Formal</h3>
 
-<section class="galeria">
+        <p>
 
-    <h2>Momentos Especiales</h2>
+            Tu elegancia hará aún más especial esta celebración.
 
-    <div class="galeria-grid">
-
-        <img src="assets/img/emma1.jpg" alt="Emma Sofía">
-        <img src="assets/img/emma2.jpg" alt="Emma Sofía">
-        <img src="assets/img/emma3.jpg" alt="Emma Sofía">
-        <img src="assets/img/emma4.jpg" alt="Emma Sofía">
+        </p>
 
     </div>
 
 </section>
 
 <!-- ==========================
+GALERÍA
+========================== -->
+
+<section class="galeria">
+
+    <div class="contenedor">
+
+        <h2>Momentos Especiales</h2>
+
+        <div class="galeria-grid">
+
+            <img src="assets/img/emma1.jpg" alt="Emma Sofía">
+
+            <img src="assets/img/emma2.jpg" alt="Emma Sofía">
+
+            <img src="assets/img/emma3.jpg" alt="Emma Sofía">
+
+            <img src="assets/img/emma4.jpg" alt="Emma Sofía">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================
 CONFIRMACIÓN
 ========================== -->
 
 <section class="confirmacion">
 
-    <h2>Confirma tu asistencia</h2>
+    <div class="contenedor">
 
-    <p>
-        Tu presencia hará de este día un recuerdo inolvidable.
-    </p>
+        <h2>Confirma tu asistencia</h2>
 
-    <a
-        href="https://wa.me/529995452078?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años%20de%20Emma%20Sofía."
-        target="_blank"
-        class="boton whatsapp">
+        <p>
 
-        Confirmar por WhatsApp
+            Tu presencia hará de este día un recuerdo inolvidable.
 
-    </a>
+        </p>
+
+        <a href="https://wa.me/529995452078?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años%20de%20Emma%20Sofía."
+           target="_blank"
+           class="boton whatsapp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Confirmar asistencia
+
+        </a>
+
+    </div>
 
 </section>
 
@@ -246,17 +347,76 @@ DESPEDIDA
 
 <section class="despedida">
 
-    <h2>¡Te esperamos!</h2>
+    <div class="contenedor">
 
-    <p>
-        Gracias por ser parte de uno de los días más importantes de mi vida.
-    </p>
+        <h2>¡Te esperamos!</h2>
 
-    <h3>
-        Emma Sofía Greene Chávez
-    </h3>
+        <p>
+
+            Gracias por acompañarnos en uno de los días más importantes de nuestra vida.
+
+        </p>
+
+        <h3>
+
+            Emma Sofía Greene Chávez
+
+        </h3>
+
+    </div>
 
 </section>
+
+<!-- ==========================
+BOTÓN MÚSICA
+========================== -->
+
+<button id="musicaBtn">
+
+    <i class="fa-solid fa-music"></i>
+
+</button>
+
+<audio id="musica" loop>
+
+    <source src="assets/music/musica.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ==========================
+MENÚ INFERIOR
+========================== -->
+
+<nav class="menuInferior">
+
+    <a href="#countdown">
+
+        <i class="fa-solid fa-clock"></i>
+
+    </a>
+
+    <a href="#eventos">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+    </a>
+
+    <a href="#galeria">
+
+        <i class="fa-solid fa-image"></i>
+
+    </a>
+
+    <a href="#confirmacion">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+</nav>
+<!-- ==========================
+SCRIPTS
+========================== -->
 
 <script src="js/script.js"></script>
 
