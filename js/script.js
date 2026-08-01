@@ -1,63 +1,78 @@
-// ===================================
+// ======================================
 // PANTALLA DE CARGA
-// ===================================
+// ======================================
 
 window.addEventListener("load", () => {
 
+    const loader = document.getElementById("loader");
+
     setTimeout(() => {
 
-        document.getElementById("loader").style.opacity = "0";
+        loader.style.opacity = "0";
 
         setTimeout(() => {
-            document.getElementById("loader").style.display = "none";
+
+            loader.style.display = "none";
+
         }, 800);
 
-    }, 1500);
+    }, 1800);
 
 });
 
-// ===================================
+// ======================================
 // BOTÓN ABRIR INVITACIÓN
-// ===================================
-const boton = document.getElementById("abrirInvitacion");
+// ======================================
 
-if (boton) {
+const abrir = document.getElementById("abrirInvitacion");
 
-    boton.addEventListener("click", () => {
+if(abrir){
 
-        window.scrollTo({
-            top: document.querySelector(".mensaje").offsetTop,
-            behavior: "smooth"
+    abrir.addEventListener("click",()=>{
+
+        document.querySelector(".bienvenida").scrollIntoView({
+
+            behavior:"smooth"
+
         });
 
     });
 
 }
 
-
-// ===================================
+// ======================================
 // CUENTA REGRESIVA
-// ===================================
+// ======================================
 
-const fechaEvento = new Date("September 26, 2026 18:00:00").getTime();
+const fechaEvento = new Date("2026-09-26T18:00:00").getTime();
 
-setInterval(() => {
+function actualizarContador(){
 
     const ahora = new Date().getTime();
 
     const diferencia = fechaEvento - ahora;
 
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    if(diferencia <= 0){
 
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        return;
 
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    }
 
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+    const dias = Math.floor(diferencia/(1000*60*60*24));
 
-    document.getElementById("dias").textContent = dias;
-    document.getElementById("horas").textContent = horas;
-    document.getElementById("minutos").textContent = minutos;
-    document.getElementById("segundos").textContent = segundos;
+    const horas = Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
 
-}, 1000);
+    const minutos = Math.floor((diferencia%(1000*60*60))/(1000*60));
+
+    const segundos = Math.floor((diferencia%(1000*60))/1000);
+
+    document.getElementById("dias").textContent=dias;
+    document.getElementById("horas").textContent=horas;
+    document.getElementById("minutos").textContent=minutos;
+    document.getElementById("segundos").textContent=segundos;
+
+}
+
+actualizarContador();
+
+setInterval(actualizarContador,1000);
