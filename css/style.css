@@ -93,3 +93,22 @@ body{
 section{
     padding:80px 25px;
 }
+.corona{
+    font-size:38px;
+    margin-bottom:8px;
+    animation:brillo 2s infinite;
+}
+
+@keyframes brillo{
+
+0%,100%{
+opacity:1;
+transform:scale(1);
+}
+
+50%{
+opacity:.6;
+transform:scale(1.15);
+}
+
+}
